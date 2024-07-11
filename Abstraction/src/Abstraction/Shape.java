@@ -1,0 +1,5 @@
+package Abstraction;
+
+abstract class Shape {
+public abstract void draw();
+}

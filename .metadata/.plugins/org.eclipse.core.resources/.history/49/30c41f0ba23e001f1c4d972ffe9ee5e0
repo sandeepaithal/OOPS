@@ -1,0 +1,30 @@
+package Runtime.Polymorphism;
+
+class MakePayment {
+public void makepayment() {
+	System.out.println("Making a generic Payment");
+}
+
+}
+class creditcard extends MakePayment{
+	@Override
+	public void makepayment() {
+		System.out.println("Making payment through credit card");
+	}
+}
+class PhonePe extends MakePayment{
+	@Override
+	public void makepayment() {
+		System.out.println("Making payment through PhonePe ");
+	}
+}
+class Test{
+	public static void main(String[] args) {
+//		generic payment
+		MakePayment p1=new MakePayment();
+//		credit card
+		MakePayment p2=new creditcard();
+//		PhonePe
+		MakePayment p3=new PhonePe();
+	}
+}

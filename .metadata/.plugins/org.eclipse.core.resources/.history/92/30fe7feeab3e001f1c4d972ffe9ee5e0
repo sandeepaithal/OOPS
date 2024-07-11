@@ -1,0 +1,14 @@
+package encapsulation;
+
+public class Car {
+	private String company;
+	private String model;
+	private int year;
+
+	public Car(String company, String model, int year) {
+		this.company = company;
+		this.model = model;
+		this.year = year;
+	}
+
+}

@@ -1,0 +1,30 @@
+package Multilevelinheritance;
+
+public class Vehicle {
+String brand;
+public void display() {
+	System.out.println("Brand: "+brand);
+}
+
+}
+class car extends Vehicle{
+	String model;
+	public void display() {
+		super.display();
+		System.out.println("Model :"+model);
+	}
+}
+class ev extends car{
+	int batterylife;
+	public void display() {
+		super.display();
+		System.out.println("Battery life :"+batterylife +" hours");
+	}
+	public static void main(String[] args) {
+		ev ev1=new ev();
+		ev1.brand="Tesla";
+		ev1.model="Model S";
+		ev1.batterylife=24;
+		ev1.display();
+	}
+}

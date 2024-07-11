@@ -1,0 +1,9 @@
+package encapsulation;
+
+public class Car {
+	private String company;
+	private String model;
+	private int year;
+	
+
+}
