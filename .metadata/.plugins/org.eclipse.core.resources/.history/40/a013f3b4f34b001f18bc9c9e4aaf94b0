@@ -1,0 +1,29 @@
+package runtimepolymorphism;
+
+ class Message {
+public void sendMsg() {
+	System.out.println("sending message");
+}
+
+}
+class SMSmessage extends Message{
+	public void sendMsg() {
+		System.out.println("sending message through SMS");
+	}
+}
+class Email extends Message{
+	public void sendMsg() {
+		System.out.println("sending message through Email");
+	}
+}
+class Test1{
+	public static void main(String[] args) {
+		Message m1=new Message();
+		Message m2=new SMSmessage();
+		Message m3= new Email();
+		m1.sendMsg();
+		m2.sendMsg();
+		m3.sendMsg();
+	}
+}
+

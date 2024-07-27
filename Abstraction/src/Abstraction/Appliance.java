@@ -1,23 +1,26 @@
-package Abstraction;
+package abstraction;
 
 abstract class Appliance {
-String brand;
-public Appliance(String brand) {
-    this.brand = brand;
+	String brand;
+
+	public Appliance(String brand) {
+		this.brand = brand;
+	}
+
+	public abstract void turnon();
 }
-public abstract void turnon();
-}
-class TV extends Appliance{
+
+class TV extends Appliance {
 
 	public TV(String brand) {
 		super(brand);
-	
+
 	}
 
 	@Override
 	public void turnon() {
-		System.out.println(brand +" TV has been turned on.");
-		
+		System.out.println(brand + " TV has been turned on.");
+
 	}
-	
+
 }

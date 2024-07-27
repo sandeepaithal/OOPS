@@ -1,11 +1,11 @@
 package encapsulation;
 
-public class Universitycourse {
+public class UniversityCourse {
 	private String coursecode;
 	private String coursename;
 	private int credits;
 
-	public Universitycourse(String coursecode, String coursename, int credits) {
+	public UniversityCourse(String coursecode, String coursename, int credits) {
 		this.coursecode = coursecode;
 		this.coursename = coursename;
 		this.credits = credits;

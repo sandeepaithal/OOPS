@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Abstraction&apos; to &apos;abstraction&apos;&#x0D;&#x0A;- Original project: &apos;Abstraction&apos;&#x0D;&#x0A;- Original element: &apos;Abstraction/src/Abstraction&apos;&#x0D;&#x0A;- Renamed element: &apos;Abstraction/src/abstraction&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Abstraction&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Abstraction" name="abstraction" qualified="false" references="true" stamp="1722070491658" textual="false" version="1.0"/>
+</session>
