@@ -1,17 +1,29 @@
 package compiletimepolymorphism;
 
+/**
+ * A shape class demonstrating compile-time polymorphism through method overloading.
+ * Provides methods to calculate the area of different shapes: square, rectangle, and circle.
+ * 
+ * @author C Sandeep Aithal
+ */
 public class Shape {
-    // Method to calculate the area of a square
+    
+    /**
+     * Calculates the area of a square.
     public double area(int side) {
         return side * side;
     }
 
-    // Method to calculate the area of a rectangle
+    /**
+     * Calculates the area of a rectangle.
+     */
     public double area(int length, int breadth) {
         return length * breadth;
     }
 
-    // Method to calculate the area of a circle
+    /**
+     * Calculates the area of a circle.
+     */
     public double area(double radius) {
         return 3.14 * radius * radius;
     }

@@ -1,37 +1,64 @@
 package encapsulation;
 
+/**
+ * Represents a car with encapsulated properties: company, model, and year.
+ * Provides getter and setter methods for accessing and modifying these properties.
+ * 
+ * @author C Sandeep Aithal
+ */
 public class Car {
-	private String company;
-	private String model;
-	private int year;
+    private String company;
+    private String model;
+    private int year;
 
-	public Car(String company, String model, int year) {
-		this.company = company;
-		this.model = model;
-		this.year = year;
-	}
+    /**
+     * Constructs a Car object with the specified company, model, and year.
+     */
+    public Car(String company, String model, int year) {
+        this.company = company;
+        this.model = model;
+        this.year = year;
+    }
 
-	public String getCompany() {
-		return company;
-	}
+    /**
+     * Gets the company that manufactures the car.
+     */
+    public String getCompany() {
+        return company;
+    }
 
-	public void setCompany(String company) {
-		this.company = company;
-	}
+    /**
+     * Sets the company that manufactures the car.
+     */
+    public void setCompany(String company) {
+        this.company = company;
+    }
 
-	public String getModel() {
-		return model;
-	}
+    /**
+     * Gets the model of the car.
+     */
+    public String getModel() {
+        return model;
+    }
 
-	public void setModel(String model) {
-		this.model = model;
-	}
+    /**
+     * Sets the model of the car.
+     */
+    public void setModel(String model) {
+        this.model = model;
+    }
 
-	public int getYear() {
-		return year;
-	}
+    /**
+     * Gets the year the car was manufactured.
+     */
+    public int getYear() {
+        return year;
+    }
 
-	public void setYear(int year) {
-		this.year = year;
-	}
+    /**
+     * Sets the year the car was manufactured.
+     */
+    public void setYear(int year) {
+        this.year = year;
+    }
 }

@@ -1,0 +1,80 @@
+package encapsulation;
+
+/**
+ * Represents a university course with encapsulated properties: course code, course name, and credits.
+ * Provides getter and setter methods for accessing and modifying these properties.
+ * 
+ * @author C Sandeep Aithal
+ */
+public class UniversityCourse {
+    private String coursecode;
+    private String coursename;
+    private int credits;
+
+    /**
+     * Constructs a UniversityCourse object with the specified course code, course name, and credits.
+     * 
+     * @param coursecode The code of the course.
+     * @param coursename The name of the course.
+     * @param credits The number of credits for the course.
+     */
+    public UniversityCourse(String coursecode, String coursename, int credits) {
+        this.coursecode = coursecode;
+        this.coursename = coursename;
+        this.credits = credits;
+    }
+
+    /**
+     * Gets the course code of the course.
+     * 
+     * @return The course code.
+     */
+    public String getCoursecode() {
+        return coursecode;
+    }
+
+    /**
+     * Sets the course code of the course.
+     * 
+     * @param coursecode The new course code.
+     */
+    public void setCoursecode(String coursecode) {
+        this.coursecode = coursecode;
+    }
+
+    /**
+     * Gets the course name of the course.
+     * 
+     * @return The course name.
+     */
+    public String getCoursename() {
+        return coursename;
+    }
+
+    /**
+     * Sets the course name of the course.
+     * 
+     * @param coursename The new course name.
+     */
+    public void setCoursename(String coursename) {
+        this.coursename = coursename;
+    }
+
+    /**
+     * Gets the number of credits for the course.
+     * 
+     * @return The number of credits.
+     */
+    public int getCredits() {
+        return credits;
+    }
+
+    /**
+     * Sets the number of credits for the course.
+     * 
+     * @param credits The new number of credits.
+     */
+    public void setCredits(int credits) {
+        this.credits = credits;
+    }
+}

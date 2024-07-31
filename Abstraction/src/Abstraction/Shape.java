@@ -1,5 +1,14 @@
 package abstraction;
 
+/**
+ * Represents an abstract Shape.
+ * Provides an abstract method to draw the shape.
+ * 
+ * @author C Sandeep Aithal
+ */
 abstract class Shape {
-	public abstract void draw();
+    /**
+     * Abstract method to draw the shape.
+     */
+    public abstract void draw();
 }

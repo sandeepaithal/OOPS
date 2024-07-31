@@ -1,11 +1,26 @@
 package runtimepolymorphism;
 
+/**
+ * A base class for making payments.
+ * Provides a generic method to make a payment.
+ * 
+ * @author C Sandeep Aithal
+ */
 class MakePayment {
+    /**
+     * Makes a generic payment.
+     */
     public void makePayment() {
         System.out.println("Making a generic payment");
     }
 }
 
+/**
+ * Represents a payment made through a credit card.
+ * Overrides the makePayment method to provide specific implementation.
+ * 
+ * @author C Sandeep Aithal
+ */
 class CreditCard extends MakePayment {
     @Override
     public void makePayment() {
@@ -13,6 +28,12 @@ class CreditCard extends MakePayment {
     }
 }
 
+/**
+ * Represents a payment made through PhonePe.
+ * Overrides the makePayment method to provide specific implementation.
+ * 
+ * @author C Sandeep Aithal
+ */
 class PhonePe extends MakePayment {
     @Override
     public void makePayment() {
@@ -20,6 +41,11 @@ class PhonePe extends MakePayment {
     }
 }
 
+/**
+ * A test class to demonstrate runtime polymorphism with payment methods.
+ * 
+ * @author C Sandeep Aithal
+ */
 class Test {
     public static void main(String[] args) {
         // Generic payment

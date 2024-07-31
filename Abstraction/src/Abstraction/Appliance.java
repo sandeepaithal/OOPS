@@ -1,26 +1,45 @@
 package abstraction;
 
+/**
+ * Represents an abstract class Appliance with a brand.
+ * Provides an abstract method to turn on the appliance.
+ * 
+ * @author C Sandeep Aithal
+ */
 abstract class Appliance {
-	String brand;
+    String brand;
 
-	public Appliance(String brand) {
-		this.brand = brand;
-	}
+    /**
+     * Constructs an Appliance object with the specified brand.
+     */
+    public Appliance(String brand) {
+        this.brand = brand;
+    }
 
-	public abstract void turnon();
+    /**
+     * Abstract method to turn on the appliance.
+     */
+    public abstract void turnon();
 }
 
+/**
+ * Represents a TV, which is a type of Appliance.
+ * Overrides the turnon method to provide specific behavior for a TV.
+ */
 class TV extends Appliance {
 
-	public TV(String brand) {
-		super(brand);
+    /**
+     * Constructs a TV object with the specified brand.
+     */
+    public TV(String brand) {
+        super(brand);
+    }
 
-	}
-
-	@Override
-	public void turnon() {
-		System.out.println(brand + " TV has been turned on.");
-
-	}
-
+    /**
+     * Turns on the TV and prints a message indicating that the TV has been turned on.
+     */
+    @Override
+    public void turnon() {
+        System.out.println(brand + " TV has been turned on.");
+    }
 }
